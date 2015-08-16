@@ -2,15 +2,15 @@ package scanner;
 
 import java.util.Scanner;
 
-public class Int {
+public class IntegerNumbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите пожалуйста два целых числа: ");
-        int x = scanner.nextInt(), y = scanner.nextInt();
-        System.out.println(x + y);
-        System.out.println(x - y);
-        System.out.println(x * y);
-        System.out.println(x / y);
+        System.out.print("Input please two integer values: ");
+        int FirstInteger = scanner.nextInt(), SecondInteger = scanner.nextInt();
+        System.out.println(FirstInteger + SecondInteger);
+        System.out.println(FirstInteger - SecondInteger);
+        System.out.println(FirstInteger * SecondInteger);
+        System.out.println(FirstInteger / SecondInteger);
     }
 }
 

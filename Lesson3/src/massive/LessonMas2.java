@@ -6,20 +6,20 @@ import java.util.Scanner;
 public class LessonMas2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите длинну массива:");
-        int n = scanner.nextInt();
-        int a[] = new int[n];
-        System.out.println("Наполните массив:");
-        for (int i = 0; i < n; i++) {
-            a[i] = scanner.nextInt();
+        System.out.println("Input Array's length:");
+        int ArraySize = scanner.nextInt();
+        int ArrayLesson2[] = new int[ArraySize];
+        System.out.println("Fill Array:");
+        for (int i = 0; i < ArraySize; i++) {
+            ArrayLesson2[i] = scanner.nextInt();
         }
-        int t = a[0];
-        a[0] = a[n - 1];
-        a[n - 1] = t;
-        //for (int i = 0; i < n;i++) {
+        int AdditionalVariable = ArrayLesson2[0];
+        ArrayLesson2[0] = ArrayLesson2[ArraySize - 1];
+        ArrayLesson2[ArraySize - 1] = AdditionalVariable;
+        //for (int i = 0; i < ArraySize;i++) {
         //    System.out.println(a[i]);
         //}
-        String s = Arrays.toString(a);
-        System.out.println(s);
+        String OutputString = Arrays.toString(ArrayLesson2);
+        System.out.println(OutputString);
     }
 }
